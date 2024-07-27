@@ -9,9 +9,9 @@ import { BrowserRouter } from 'react-router-dom';
 // import { TodoApp } from './useReducer/TodoApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
   <React.StrictMode>
-    <MainApp />
+    <BrowserRouter>
+      <MainApp />
+    </BrowserRouter>
   </React.StrictMode>
-  </BrowserRouter>
 )
