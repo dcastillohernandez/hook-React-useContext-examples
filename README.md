@@ -1,2 +1,2 @@
 # hook-React-useContext-examples
- Ejercicios para prácticar donde se utilizan el useContext 
+ Ejercicios para prácticas donde se utiliza el useContext 
