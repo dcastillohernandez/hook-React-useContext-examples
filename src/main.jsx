@@ -1,8 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 import { MainApp } from './useContext/MainApp';
 import { BrowserRouter } from 'react-router-dom';
+
+import './index.css';
 
 // import { Padre } from './usando-memo/Padre';
 // import { PokeApp } from './pokemon-app/PokeApp';
