@@ -1,9 +1,11 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { HomePage, AboutPage, LoginPage, Navbar } from './';
+import { UserProvider } from './context/UserProvider';
 
 export const MainApp = () => {
     return (
-        <>
+        /* UserProvider es mi contexto ó higher order component */
+        <UserProvider>
             <Navbar />
             <hr />
 
@@ -11,7 +13,7 @@ export const MainApp = () => {
             <Routes>
                 {/* Asegurarse de importar Route de react-router-dom */}
                 {/* El componente Route tiene 2 propiedades: path y element */}
-                <Route path="/"     element={<HomePage />} />
+                <Route path="/" element={<HomePage />} />
                 <Route path="login" element={<LoginPage />} />
                 <Route path="about" element={<AboutPage />} />
 
@@ -20,6 +22,6 @@ export const MainApp = () => {
                 {/* La diferencia es que con el Navigate redirecciona al path que le indiquemos y no queda la url con el error */}
                 <Route path="/*" element={<Navigate to="/" />} />
             </Routes>
-        </>
+        </UserProvider>
     )
 }
